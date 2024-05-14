@@ -17,6 +17,8 @@ body {
   display: flex;
   flex-direction: row;
   position: fixed;
+  top: 0;
+  left: 0;
   align-items: center;
   justify-content: space-between;
   width: 100dvw;
@@ -24,6 +26,13 @@ body {
   padding: 20px;
   color: #aaa;
   z-index: 10;
+  white-space: nowrap;
+  font-size: 3vmin;
+}
+
+.avtive {
+  background-color: #fff;
+  color: #333;
 }
 
 .links {
@@ -31,10 +40,9 @@ body {
 }
 
 .links a {
-  font-size: 16px;
   text-decoration: none;
   color: #aaa;
-  margin: 0 5px;
+  margin: 0 1vmin;
 }
 
 .links a:first-of-type {
@@ -46,7 +54,9 @@ body {
   height: 100dvh;
   background-image: url(./images/Office-Desk-2.jpg);
   background-size: cover;
+  background-position: center;
   color: #fff;
+  font-size: 3vmin;
 }
 
 .top .image {
@@ -61,8 +71,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  white-space: nowrap;
 }
+
+.welcome h1 {
+  white-space: nowrap;
+  margin-bottom: 10px;
+}
+
 .content {
   width: 100%;
   padding: 10px;
