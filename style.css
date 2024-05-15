@@ -13,7 +13,7 @@ body {
   width: 100dvw;
 }
 
-.navbar {
+#navbar {
   display: flex;
   flex-direction: row;
   position: fixed;
@@ -28,11 +28,13 @@ body {
   z-index: 10;
   white-space: nowrap;
   font-size: 3vmin;
+  transition: 0.5s ease-in-out;
 }
 
-.avtive {
+#navbar.open {
   background-color: #fff;
   color: #333;
+  padding: 10px 20px;
 }
 
 .links {
@@ -81,6 +83,10 @@ body {
 .content {
   width: 100%;
   padding: 10px;
+  margin: 20px;
   position: absolute;
   left: 0;
+}
+.content div {
+  margin: 20px;
 }
