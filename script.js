@@ -1,9 +1,9 @@
 const navbar = document.getElementById("navbar");
 const wellcome = document.querySelector(".welcome");
 
-console.log(navbar, wellcome.offsetTop);
-
 const myPosition = wellcome.offsetTop;
+
+window.onscroll = position;
 
 function position() {
   if (window.scrollY >= myPosition - 100) {
@@ -12,5 +12,3 @@ function position() {
     navbar.classList.remove("open");
   }
 }
-
-window.onscroll = position;
